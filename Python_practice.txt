@@ -1,0 +1,80 @@
+print("Hello World")
+
+
+States = ["Delaware", "New York", "California", "Hawaii", "Texas"]
+
+print(len(States))
+
+
+print(States[0])
+print(States[1])
+print(States[2])
+print(States[3])
+print(States[4])
+
+States.append('Alaska')
+
+print(States[5])
+
+for index in range(len(States) // 2):
+
+    States[index], States[-index-1] = States[-index-1], States[index]
+
+
+print(States)
+
+print(len(States))
+
+States = ("Delaware", "New York", "California", "Hawaii", "Texas")
+
+print(States[2])
+
+d={}
+d ["John"] = 24
+d["Billy"] = 45
+d["Sam"] = 32
+
+print(d["Sam"])
+
+
+
+#counties_dict = {}
+#counties_dict["Arapahoe"] = 422829
+
+#print(counties_dict)
+
+voting_data = []
+
+voting_data.append({"county" : "Arapahoe", "registered_voters" : 422829})
+voting_data.append({"county":"Denver", "registered_voters": 463353})
+voting_data.append({"county":"Jefferson", "registered_voters": 432438})
+
+print(voting_data)
+
+print(len(voting_data))
+
+
+
+# How to use an F-string with int and input
+my_votes = int(input("How many votes did you get in the election? "))
+total_votes = int(input("What is the total votes in the election? "))
+print(f"I received {my_votes / total_votes * 100}% of the total votes.")
+
+
+counties_dict = {"Arapahoe": 422829, "Denver": 463353, "Jefferson": 432438}
+
+for county, voters in counties_dict.items():
+
+    print(f'{county} county has {voters} registered voters.')
+
+
+
+
+
+
+
+
+
+
+
+
